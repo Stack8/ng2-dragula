@@ -1,19 +1,24 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "types": [ "dragula" ]
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "declaration": false,
+    "skipLibCheck": true,
+    "stripInternal": true,
+    "lib": ["dom", "es2015"],
+    "types": [
+      "dragula",
+      "jasmine",
+      "webpack"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "scripts",
-    "src/spec",
-    "src/test.ts"
-  ],
-  "files": [
-    "./src/public_api.ts"
-  ]
+  "atom": { "rewriteTsconfig": false }
 }
