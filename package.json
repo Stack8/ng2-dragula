@@ -23,6 +23,18 @@
     "url": "https://github.com/valor-software/ng2-dragula/issues"
   },
   "homepage": "https://github.com/valor-software/ng2-dragula#readme",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "ng-packagr",
+    "lib.build": "yarn clean && yarn build",
+    "lint": "tslint --config tslint.json src/**/*.ts",
+    "docs": "compodoc -p tsconfig.json -c compodoc.json src",
+    "test": "ng test",
+    "test:headless": "ng test --browsers=CustomChromeHeadless",
+    "test-coverage": "yarn test --code-coverage --watch=false --progress=false",
+    "prepare": "yarn clean && yarn build",
+    "watch": "chokidar 'src/**/*.ts' 'src/**/*.html' 'src/**/*.scss' -c 'yarn build'"
+  },
   "dependencies": {
     "@types/dragula": "^2.1.34",
     "dragula": "^3.7.2"
