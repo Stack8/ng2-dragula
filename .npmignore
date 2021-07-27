@@ -31,7 +31,6 @@ node_modules
 #IntelliJ configuration files
 .idea
 
-dist
 dev
 docs
 lib
@@ -40,9 +39,6 @@ tmp
 
 Thumbs.db
 .DS_Store
-
-*.ts
-!*.d.ts
 
 src/app/example*
 src/public
