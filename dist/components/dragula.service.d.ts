@@ -91,7 +91,7 @@ export declare class DragulaService {
      * Note: formerly known as `setOptions`
      */
     createGroup<T = any>(name: string, options: DragulaOptions<T>): Group;
-    private handleModels;
-    private setupEvents;
-    private domIndexOf;
+    private handleModels({name, drake, options});
+    private setupEvents(group);
+    private domIndexOf(child, parent);
 }

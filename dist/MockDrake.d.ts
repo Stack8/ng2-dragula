@@ -22,7 +22,7 @@ export declare const MockDrakeFactory: DrakeFactory;
 export declare class MockDrake implements DrakeWithModels {
     containers: Element[];
     options: DragulaOptions;
-    models?: any[][];
+    models: any[][];
     /**
      * @param containers A list of container elements.
      * @param options These will NOT be used. At all.

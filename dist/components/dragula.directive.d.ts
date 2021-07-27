@@ -7,7 +7,7 @@ export declare class DragulaDirective implements OnChanges, OnDestroy {
     dragulaModel: any[];
     dragulaModelChange: EventEmitter<any[]>;
     private subs;
-    private get container();
+    private readonly container;
     private group;
     constructor(el: ElementRef, dragulaService: DragulaService);
     ngOnChanges(changes: {
