@@ -1,4 +1,3 @@
-/// <reference types="dragula" />
 import { DragulaOptions as OriginalOptions } from 'dragula';
 export interface DragulaOptions<T = any> extends OriginalOptions {
     copySortSource?: boolean | ((el: Element, source: Element) => boolean);

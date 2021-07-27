@@ -9,6 +9,6 @@ export declare enum EventTypes {
     Remove = "remove",
     Shadow = "shadow",
     DropModel = "dropModel",
-    RemoveModel = "removeModel",
+    RemoveModel = "removeModel"
 }
 export declare const AllEvents: EventTypes[];
