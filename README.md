@@ -1,3 +1,18 @@
+This is the Stack8 version of dragula. We need this because the main branch is unmaintained.
+
+### How do I build?
+Answer: Use `yarn build` in the root directory. This will use lerna to build the dist folder. Please make sure you've completed all relevant tasks (such as increasing the build version in package.json) before building!
+
+### How do I ship?
+Answer: Run `npm publish` in the dist folder. If you try to run it in the modules/ng2-dragula folder, it'll work, but you'll get ngcc compilation errors in SMACS.
+
+### It says I can't publish because my name isn't Jens Olesen!
+Answer: Yeah that might happen. I should probably have added other people as contributors to the npm package. Whoops!
+
+
+---
+
+
 [![npm version](https://badge.fury.io/js/ng2-dragula.svg)](http://badge.fury.io/js/ng2-dragula) [![npm downloads](https://img.shields.io/npm/dm/ng2-dragula.svg)](https://npmjs.org/ng2-dragula) [![slack](https://ngx-slack.herokuapp.com/badge.svg)](https://ngx-slack.herokuapp.com)
 [![Build Status](https://travis-ci.org/valor-software/ng2-dragula.svg?branch=master)](https://travis-ci.org/valor-software/ng2-dragula)
 [![codecov](https://codecov.io/gh/valor-software/ng2-dragula/branch/master/graph/badge.svg)](https://codecov.io/gh/valor-software/ng2-dragula)
